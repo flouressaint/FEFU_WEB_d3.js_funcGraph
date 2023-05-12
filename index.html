@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>F</title>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="graphic"></div>
+    <form style="display: flex; flex-direction: row;">
+        <p>
+            <label for="first">a:</label>
+            <input type="text" name="First">
+        </p>
+        <p style="margin-left: 10px;">
+            <label for="second">b:</label>
+            <input type="text" name="Second">
+        </p>
+        <p style="margin-left: 10px;">
+            <input type="button" value="Построить" onclick="drawGraphic(this.form.First.value,
+                                    this.form.Second.value)">
+        </p>
+    </form>
+    <script src="./program.js"></script>
+</body>
